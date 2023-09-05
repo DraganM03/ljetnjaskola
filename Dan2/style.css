@@ -1,0 +1,15 @@
+.wrapper{
+    padding: .5rem;
+    height: 150px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr); 
+    gap: 10px;
+}
+
+.wrapper div{
+    color: green;
+    background-image: linear-gradient(to right,  lime, rgb(5, 181, 5));
+    text-align: center;
+    line-height: 50px;
+}
