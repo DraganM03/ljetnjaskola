@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>forma</h1>
+    <form action="" method="post">
+        <input type="text" placeholder="unesi tekst"><br>
+        <input type="number" placeholder="unesi broj"><br>
+        <input type="password" placeholder="password"><br>
+        <div>
+            <h2>radio buttons</h2>
+            <label for="a">
+                radio1
+                <input id="a" type="radio" name="name1" value="1">
+            </label>
+            <label for="b">
+                radio2
+                <input id="b" type="radio" name="name1" value="2">
+            </label>
+        </div>
+
+        <div>
+            <h2>checkbox za pljeskavicu</h2>
+            <h3>prilozi</h3>
+            <label for="prilog1">
+                pavlaka
+                <input id="prilog1" type="checkbox">
+            </label>
+            <br>
+            <label for="prilog2">
+                majonez
+                <input id="prilog2" type="checkbox">
+            </label> 
+            <br>           
+            <label for="prilog3">
+                kecap
+                <input id="prilog3" type="checkbox">
+            </label>  
+            <br>          
+            <label for="prilog4">
+                urnebes
+                <input id="prilog4" type="checkbox">
+            </label>
+        </div><br>
+        <input type="file"><br>
+        <input type="button" value="sus"><br>
+
+        <select name="select" id="select">
+            <option value="null" selected hidden></option>
+            <option value="value-1">opcija1</option>
+            <option value="value-2" disabled>opcija2</option>
+            <option value="value-3">opcija3</option>
+            <option value="value-4">opcija4</option>
+        </select>
+        <br>
+        <textarea name="ispisisekadvecoces" id="ispisisekadvecoces" cols="30" rows="10" placeholder="ispisi se kad si vec zapeo"></textarea>
+
+        <br>
+
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
