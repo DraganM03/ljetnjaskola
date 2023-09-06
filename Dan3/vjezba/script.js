@@ -54,31 +54,20 @@ xButtons.forEach(x => {
 //console.log(search)
 
 
-search.addEventListener("change",(event)=>{
+search.addEventListener("input",(event)=>{
     //event.preventDefault()
     console.log("kliknut je search")
     elements = list.querySelectorAll("li")
-
-
+    elements.forEach(e=> {
+        console.log(e.innerText)
+        console.log(search.value)
+        if(e.innerText.includes(search.value)){
+            e.style.display = "block"
+        }else{
+            e.style.display = "none"
+        }
+    });
     
-    if(search.value){
-
-        elements.forEach(e=> {
-            console.log(e.innerText)
-            console.log(search.value)
-            if(e.innerText.includes(search.value)){
-                console.log("uspjesno")
-                let found = document.createElement("li")
-                found.innerText = e.innerText
-                
-                
-                searchResults.appendChild(found)    
-                
-                console.log(searchResults)
-                
-            }
-        });
-    }
     //console.log(event)
 })
 
