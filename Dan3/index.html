@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        li{
+            list-style-type: none;
+        }
+
+        .selected{
+            background-color: green !important;
+            color: white !important;
+        }
+
+        .item{
+            background-color: white;
+            color: black;
+        }
+        
+    </style>
 </head>
 <body>
 
@@ -17,8 +34,13 @@
     </header>
 
 
-    <form action="" method="" id="forma">
+    <form id="forma">
         <input type="text" placeholder="cao">
+        <select name="a" id="select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
         <button type="submit">Potvrdi</button>
     </form>
 
@@ -28,6 +50,9 @@
         <li class="item">li3</li>
         <li class="item">li4</li>
     </ul>
+
+    <!--usless garbage-->
+    <button id="dugme1" onclick="console.log('cao')">klikni za pozdrav</button>
 
 
     <script src="script.js"></script>
