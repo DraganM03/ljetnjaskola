@@ -26,6 +26,10 @@ div.card{
     display: flex;
     border-radius: 20px;
     flex-wrap:wrap;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 3px white,
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 div.card div.img_container{
@@ -35,12 +39,25 @@ div.card div.img_container{
     align-items: center;
 }
 
-div.card div.img_container img{
+div.card div.img_container div{
     border-radius: 20px;
     display: block;
     height: 200px;
     width: 200px;
+
 }
+
+div.card div.img_container div img{
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+
 
 div.card div.text_container{
     flex: 3 1 200px;
@@ -71,6 +88,7 @@ div.card div.text_container p{
     div.card div.text_container p,h1{
         text-align: center;
     }
+
 }
 
 @media only screen and (max-width: 330px) {

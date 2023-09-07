@@ -23,7 +23,7 @@ const fetchProducts = async () =>{
             
             <div class="card">
             <div class="img_container">
-                <img src="${imageLink}" alt="rip">
+                <div><img src="${imageLink}" alt="rip"></div>
             </div>
             <div class="text_container">
                 <h1>${product.title}</h1  >
